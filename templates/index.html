@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ogpaulw - hi!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animations.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/test.js') }}"></script>
+  </head>
+
+  <body onload="onLoad()">
+    <canvas class="background" id="backgroundCanvas"></canvas>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/background.js') }}"></script>
+
+	<div class="foregroundContent">
+		<div class="menuBar" id="js-navigation">
+		  <a id="blogLink" href="/"></a>
+		  <a id="projectsLink" href="/projects"></a>
+		  <a id="scribblesLink" href="/scribbles"></a>
+		  <a id="musicLink" href="/music"></a>
+		</div>
+
+		<h1 class="nameHead" id="name"></h1>
+
+		<div class="textbox">
+			<div class="textbox_header">
+				<h2 class="textbox_date">Friday, 22nd June, 2022</h2>
+				<h2 class="textbox_title">Welcome to my corner of the internet!</h2>				
+			</div>			
+			<p>Sed hendrerit tortor sem, eget semper eros dictum eu. Ut tempor est viverra magna lacinia interdum. Donec vitae dolor non nisl porttitor luctus. Maecenas volutpat id purus eget aliquet. Praesent sem eros, varius eget dui semper, vestibulum finibus tortor. Donec sagittis, urna a euismod mollis, diam risus sagittis ipsum, sollicitudin ultrices nibh risus quis tellus. Morbi faucibus mauris nisl, at ultricies metus sollicitudin sed.</p>
+			<p>Nulla ornare varius quam, vel tempor eros posuere nec. Sed sed interdum metus. Phasellus sed lorem eget sapien sollicitudin rhoncus eu non massa. Vivamus hendrerit eget metus at cursus. Integer vestibulum et ante sed interdum. Morbi malesuada hendrerit facilisis. Cras ac pharetra turpis. Maecenas ligula lorem, malesuada sed nunc in, dictum fermentum magna. Mauris auctor molestie dui, vitae molestie purus tristique quis. Nullam a porttitor tortor. Etiam et quam consectetur, dapibus lectus nec, aliquam nulla.</p>
+			<p>Mauris nec lorem euismod, imperdiet sem ut, pellentesque ante. Donec cursus viverra risus. Donec lacinia faucibus mauris. Etiam at massa est. Suspendisse quis scelerisque velit, at semper lacus. Aenean in efficitur lectus, ac sodales nibh. Cras sed risus et dui placerat commodo. Nulla mattis libero a arcu condimentum, in porta mauris facilisis. Nam congue massa rutrum nisl tristique, quis laoreet lorem luctus. Praesent rutrum sapien nisi, at fermentum dolor egestas ac. Ut dignissim augue massa, in egestas felis molestie in. Suspendisse vel ante risus.</p>
+			<p>Suspendisse volutpat nibh eros, quis semper erat dapibus non. Pellentesque ac ipsum nec neque bibendum fermentum ac quis massa. Ut id tempus nisl. Phasellus nec libero ex. Ut lacus risus, consectetur quis nunc vitae, pharetra vehicula mi. Morbi at elementum metus. Cras aliquet mauris turpis, quis commodo nisi tempus eget.</p>
+			<button id="test">Hello</button>
+		</div>
+			<div class="textbox">
+				<div class="textbox_header">
+					<h2 class="textbox_date">Friday, 21st December, 2001</h2>
+					<h2 class="textbox_title">Got born today.</h2>	
+				</div>
+				<p>Suspendisse eleifend lectus id bibendum pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta vehicula lorem quis consequat. Phasellus at quam efficitur, iaculis odio vel, pharetra odio. Pellentesque pellentesque, est sed consequat commodo, erat tortor semper nulla, at convallis arcu ligula sodales ante. Suspendisse efficitur sem turpis, quis suscipit orci dignissim a. Phasellus nec turpis interdum tellus egestas condimentum. Vestibulum vulputate a elit sed egestas. Mauris viverra est ac metus tempor, at scelerisque quam lobortis.</p>
+				<p>Maecenas metus ex, ultrices hendrerit volutpat at, porttitor in quam. Fusce malesuada cursus scelerisque. Donec rhoncus erat porta leo molestie sodales. Praesent auctor efficitur leo nec dictum. Aenean at eros ex. Maecenas nisl leo, consectetur vitae varius id, imperdiet id massa. Vestibulum vel ullamcorper neque. Pellentesque vitae ante nec massa ultrices vehicula. Suspendisse rutrum orci quam, vel elementum nulla elementum eu. Etiam dignissim lacus sit amet justo scelerisque porta. Donec tincidunt consectetur arcu et lobortis. Sed imperdiet nulla eu lorem vehicula lobortis. Nam dictum pharetra varius. Aliquam sed libero sed nulla condimentum consectetur. Fusce et nibh luctus diam dignissim convallis et sit amet nunc.</p>
+				<p>Duis imperdiet aliquet lacus. Nam vel diam pharetra, sollicitudin magna tempor, convallis lacus. Nam ante nulla, fringilla at augue eget, ultricies pellentesque elit. Fusce quis fermentum turpis, vel interdum ante. Quisque semper, ligula eget commodo accumsan, ante purus rhoncus tellus, nec bibendum odio est cursus erat. Vivamus in ultricies libero. Duis sagittis justo eu arcu faucibus dignissim. Aliquam nec viverra purus. Duis fringilla quis dui iaculis bibendum.</p>
+				<p>Praesent condimentum tortor eget sapien ultrices rutrum. Donec elit diam, faucibus sed placerat vel, tristique interdum nunc. Cras rhoncus commodo lorem, vitae vestibulum ligula tempus vel. Donec dictum finibus orci. Sed in metus consectetur, pharetra est ac, congue sem. Morbi mi enim, fermentum interdum nunc sed, tincidunt varius odio. Proin volutpat nunc eu neque varius vestibulum. Donec quis tempor ex, eu tincidunt metus. Donec vitae turpis libero. Nulla vel lacus consectetur, tempus nisl quis, efficitur dolor. Aliquam ligula turpis, placerat at erat vitae, pellentesque luctus lectus. Donec libero libero, ultricies ac est in, consequat bibendum diam. Integer mollis a leo et viverra.</p>
+				<p>Sed malesuada sem semper, scelerisque diam vitae, euismod risus. Etiam dignissim hendrerit nunc, sit amet fermentum odio porttitor eget. Sed quis magna tristique, molestie mauris quis, cursus dui. Curabitur rhoncus turpis et pulvinar aliquet. Nulla dictum ipsum vel elit tincidunt, et sagittis quam elementum. Nunc aliquam iaculis pulvinar. Nulla facilisi. Pellentesque mollis aliquet velit nec laoreet. Nulla vitae tristique velit, consequat porta magna. Proin vehicula lorem at ante lobortis lacinia. Integer congue urna vel libero ultricies, vitae lobortis neque accumsan. Quisque maximus sodales felis, id volutpat erat aliquet nec.</p>
+			</div>
+		</div class="textbox">
+  </body>
+</html>
